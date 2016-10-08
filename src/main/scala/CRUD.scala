@@ -7,6 +7,10 @@ object CRUD extends App with DbInit {
 
   HistoricalTable.insertOrUpdate(firstRecord)
 
+  HistoricalTable.insertData(firstRecord)
+
+  HistoricalTable.updateData(firstRecord.copy(id = "not existing data id"))
+
   HistoricalTable.insertOrUpdate(firstRecord)
 
   HistoricalTable.insertOrUpdate(firstRecord.copy(name = "newName"))

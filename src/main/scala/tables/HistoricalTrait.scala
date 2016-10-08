@@ -3,6 +3,7 @@ package tables
 import org.joda.time.DateTime
 
 trait HistoricalTrait[H <: HistoricalTrait[H, A, T], A, T] {
+
   def id: T
 
   def versionId: Int
